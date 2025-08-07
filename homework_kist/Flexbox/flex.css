@@ -1,0 +1,114 @@
+:root{
+    --background: linear-gradient(to right, #000046, #1cb5e0);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background:var(--background);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 50px 20px;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: white;
+    letter-spacing: 4px;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box {
+    background: #ffffff;
+    border: 3px solid #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    flex: 1 1 calc(33.333% - 60px); /* 3'lü görünüm için */
+    max-width: calc(33.333% - 60px);
+    min-width: 280px;
+    height: auto;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    outline: 2px solid rgb(0, 110, 255);
+    cursor: pointer;
+    box-shadow: 0 15px 30px rgba(0, 110, 255, 0.4);
+}
+
+.box > img{
+    width: 30%;
+}
+
+.box > h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.box > p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #0060a4;
+    color: #ffffff;
+    min-width: 60%;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 110, 255, 0.4);
+    
+}
+button:focus {
+    outline: 2px solid #333;
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
