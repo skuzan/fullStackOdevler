@@ -1,0 +1,114 @@
+:root{
+    --topbarBackGroundColor:#ffffff;
+    --primaryColor:#54a7b0;
+    --font-family: 'Inter', sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    
+}
+
+body{
+    min-height: 100vh;
+    padding: 10px 0px;
+}
+
+/* TOPBAR */
+
+.topbar{
+    background-color:var(--topbarBackGroundColor);
+    padding: 5px;
+    justify-content: center;
+    display: flex;
+}
+
+#home-icon{
+    width: 24px;
+    height: 24px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.top-menu-oge{
+    display: inline-block;
+    padding: 10px;
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-left:   5px;
+    border-right: 1px solid #ccc;
+    font-weight: 500;
+    text-decoration: none;
+}
+ .top-menu-oge:last-child{
+  border-right: none;
+
+
+}
+
+/* NAVBAR */
+
+
+.navbar{
+    background-color: var(--primaryColor);
+    height: 3px;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.home-work{
+    margin: 20px 40px;
+    text-align: center;
+    color: var(--primaryColor);
+    font-size: 2rem;
+}
+
+/* BOX*/
+
+.box{
+    background-color: var(--topbarBackGroundColor);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+/* HOMEWORKLISTS*/
+
+.homework-lists{
+    margin: 10px 0px 10px 15px;
+}
+
+
+.homework-lists a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 90%;
+    margin: 5px 8px; 
+    background-color: var(--primaryColor);
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 15px 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.homework-lists a:hover{
+    transform: translateX(10px);
+    outline: 2px solid rgb(0, 110, 255);
+    cursor: pointer;
+    box-shadow: 0 15px 30px rgba(0, 110, 255, 0.4);
+}
+
+.homework-title{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
