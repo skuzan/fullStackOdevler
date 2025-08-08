@@ -34,8 +34,7 @@ h1 {
 }
 
 .box {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center; 
     justify-content: center; 
     text-align: center;
@@ -44,9 +43,8 @@ h1 {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-    flex: 1 1 calc(33.333% - 60px); /* 3'lü görünüm için */
-    max-width: calc(33.333% - 60px);
-    min-width: 280px;
+    flex: 1 1 300px; 
+    max-width: none; 
     height: auto;
     padding: 15px;
 }
@@ -57,6 +55,7 @@ h1 {
     cursor: pointer;
     box-shadow: 0 15px 30px rgba(0, 110, 255, 0.4);
 }
+
 
 img{
     width: 30%;
